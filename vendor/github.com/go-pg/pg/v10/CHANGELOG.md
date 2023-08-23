@@ -8,6 +8,22 @@ but works with PostgreSQL, MySQL, and SQLite.
 
 # Changelog
 
+## v10.11.1
+
+- Fixed bug with how cancelled contexts are handled in SingleConnPool connections ([#1981](https://github.com/go-pg/pg/pull/1981))
+
+Thank you @xin-tsla!
+
+## v10.11.0
+
+- Updated dependency `mellium.im/sasl` from 0.2.1 to 0.3.1. ([#1969](https://github.com/go-pg/pg/pull/1969))
+
+## v10.10.7
+
+- Fixed race condition in notify listener.
+- Add shortcut `WhereInOr`.
+- Fixed bug in sending cancel request to terminate long running query.
+
 ## v10.10.6
 
 - Updated OpenTelemetry to v1.0.0.
